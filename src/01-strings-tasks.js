@@ -19,7 +19,7 @@
  *   '',  'bb'  => 'bb'
  */
 function concatenateStrings(value1, value2) {
-  return value1.concat(value2);
+  return value1 + value2;
 }
 
 
@@ -111,11 +111,7 @@ function removeLeadingAndTrailingWhitespaces(value) {
  *   'cat', 3 => 'catcatcat'
  */
 function repeatString(value, count) {
-  let str = '';
-  for (let i = 1; i <= count; i += 1) {
-    str += value;
-  }
-  return str;
+  return value.repeat(count);
 }
 
 /**
